@@ -1,0 +1,35 @@
+{
+  "name": "jsefton/package-template",
+  "type": "library",
+  "description": "Endor Default Package Template",
+  "keywords": ["Endor","cms","laravel"],
+  "homepage": "https://endor.digital",
+  "license": "MIT",
+  "repositories":[],
+  "require": {
+      "laravel/framework": ">=7.0"
+  },
+  "archive": {
+    "exclude": [
+      "/tests",
+      "tests",
+      "tests/*.*",
+      "phpunit.xml",
+      ".gitignore",
+      ".gitattributes",
+      "README.md"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Package\\Feature\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Package\\Feature\\PackageServiceProvider"
+      ]
+    }
+  }
+}
