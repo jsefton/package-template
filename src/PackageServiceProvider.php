@@ -30,8 +30,8 @@ class PackageServiceProvider extends ServiceProvider
             ], 'package-feature.config');
         }
 
-        if (is_dir(__DIR__.'/migrations')) {
-            $this->loadMigrationsFrom(__DIR__ . '/migrations');
+        if (is_dir(__DIR__.'/../migrations')) {
+            $this->loadMigrationsFrom(__DIR__ . '/../migrations');
         }
 
         if (is_dir(__DIR__.'/../resources/views')) {
